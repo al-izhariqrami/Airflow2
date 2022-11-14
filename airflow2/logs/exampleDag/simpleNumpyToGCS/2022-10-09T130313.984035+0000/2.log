@@ -1,0 +1,114 @@
+[2022-10-18 04:51:43,492] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: exampleDag.simpleNumpyToGCS scheduled__2022-10-09T13:03:13.984035+00:00 [queued]>
+[2022-10-18 04:51:43,511] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: exampleDag.simpleNumpyToGCS scheduled__2022-10-09T13:03:13.984035+00:00 [queued]>
+[2022-10-18 04:51:43,511] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-18 04:51:43,512] {taskinstance.py:1239} INFO - Starting attempt 2 of 2
+[2022-10-18 04:51:43,512] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-18 04:51:43,529] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): simpleNumpyToGCS> on 2022-10-09 13:03:13.984035+00:00
+[2022-10-18 04:51:43,536] {standard_task_runner.py:52} INFO - Started process 116 to run task
+[2022-10-18 04:51:43,540] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'exampleDag', 'simpleNumpyToGCS', 'scheduled__2022-10-09T13:03:13.984035+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/simple_numpy_***.py', '--cfg-path', '/tmp/tmpxj2dx_gy', '--error-file', '/tmp/tmpj8p5scv8']
+[2022-10-18 04:51:43,550] {standard_task_runner.py:77} INFO - Job 79: Subtask simpleNumpyToGCS
+[2022-10-18 04:51:43,660] {logging_mixin.py:109} INFO - Running <TaskInstance: exampleDag.simpleNumpyToGCS scheduled__2022-10-09T13:03:13.984035+00:00 [running]> on host aa6ed6516576
+[2022-10-18 04:51:43,814] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=exampleDag
+AIRFLOW_CTX_TASK_ID=simpleNumpyToGCS
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-09T13:03:13.984035+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-09T13:03:13.984035+00:00
+[2022-10-18 04:51:43,817] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,817] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,818] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,820] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,821] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,823] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,824] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,825] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,826] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,826] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,827] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,827] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-10-18 04:51:43,829] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-10-18 04:51:43,859] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/simple_numpy_airflow.py", line 61, in simpleNumpyToGCS
+    mime_type='text/csv')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 481, in upload
+    partial(blob.upload_from_filename, filename=filename, content_type=mime_type, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 442, in _call_with_retry
+    f()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2720, in upload_from_filename
+    with open(filename, "rb") as file_obj:
+FileNotFoundError: [Errno 2] No such file or directory: '/.google/credentials/bank_marketing.csv'
+[2022-10-18 04:51:43,887] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=exampleDag, task_id=simpleNumpyToGCS, execution_date=20221009T130313, start_date=20221018T045143, end_date=20221018T045143
+[2022-10-18 04:51:43,913] {standard_task_runner.py:92} ERROR - Failed to execute job 79 for task simpleNumpyToGCS
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/simple_numpy_airflow.py", line 61, in simpleNumpyToGCS
+    mime_type='text/csv')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 481, in upload
+    partial(blob.upload_from_filename, filename=filename, content_type=mime_type, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/gcs.py", line 442, in _call_with_retry
+    f()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2720, in upload_from_filename
+    with open(filename, "rb") as file_obj:
+FileNotFoundError: [Errno 2] No such file or directory: '/.google/credentials/bank_marketing.csv'
+[2022-10-18 04:51:43,928] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-10-18 04:51:44,012] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
